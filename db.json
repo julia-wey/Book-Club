@@ -1,0 +1,139 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Beloved",
+        "author": "Toni Morrison",
+        "publisher": "Alfred A. Knopf" ,
+        "image": "https://images.penguinrandomhouse.com/cover/9780525659273",
+        "discussion date": "January 2024",
+        "likes": 0
+      },
+      {
+        "id": 2,
+        "title": "Life of Pi",
+        "author": "Yann Martel",
+        "publisher": "HarperCollins",
+        "image": "https://m.media-amazon.com/images/I/51rxEvLljUL._SY445_SX342_.jpg",
+        "discussion date": "February 2024",
+        "likes": 0
+      },
+      {
+        "id": 3,
+        "title": "On Earth We're Briefly Gorgeous",
+        "author": "Ocean Vuong",
+        "publisher": "Penguin Press",
+        "image": "https://m.media-amazon.com/images/I/41pUuyut8KL._SY445_SX342_.jpg",
+        "discussion date": "March 2024",
+        "likes": 0
+      },
+      {
+        "id": 4,
+        "title": "Braiding Sweetgrass",
+        "author": "Robin Wall Kimmerer",
+        "publisher": "Milkweed Editions",
+        "image": "https://milkweed.org/sites/default/files/styles/book_cover/public/books/front/BraidingSweetgrass_PB_Cover_NB.jpg?itok=e7d_zlYu",
+        "discussion date": "April 2024",
+        "likes": 0
+      },
+      {
+        "id": 5,
+        "title": "Possessing the Secret of Joy" ,
+        "author": "Alice Walker",
+        "publisher": "Harcourt Brace Jovanovich",
+        "image": "https://acappellabooks.cdn.bibliopolis.com/api/ingram/images/0151731527.jpg?auto=webp&v=1637120713",
+        "discussion date": "May 2024",
+        "likes": 0
+      },
+      {
+        "id": 6,
+        "title": "Rebel Girl: My Life as a Feminist Punk",
+        "author": "Kathleen Hanna",
+        "publisher": "HarperCollins",
+        "image": "https://www.harpercollins.com/cdn/shop/files/9780062825230.jpg?v=1714564763&width=350",
+        "discussion date": "June 2024",
+        "likes": 0
+      },
+      {
+        "id": 7,
+        "title": "Wild",
+        "author": "Cheryl Strayed",
+        "publisher": "Alfred A. Knopf",
+        "image": "https://m.media-amazon.com/images/I/71yg8iv4RRL._AC_UF1000,1000_QL80_DpWeblab_.jpg",
+        "discussion date": "July 2024",
+        "likes": 0
+      },
+      {
+        "id": 8,
+        "title": "The Lowland",
+        "author": "Jhumpa Lahiri",
+        "publisher": "Alfred A. Knopf and Random House",
+        "image": "https://m.media-amazon.com/images/I/41f4nGVkI7L._SY445_SX342_.jpg",
+        "discussion date": "August 2024",
+        "likes": 0
+      },
+      {
+        "id": 9,
+        "title": "Americanah",
+        "author": "Chimamanda Ngozi Adichie",
+        "publisher": "Alfred A. Knopf",
+        "image": "https://m.media-amazon.com/images/I/61FWoa4q3sL._AC_UF1000,1000_QL80_.jpg",
+        "discussion date": "September 2024",
+        "likes": 0
+      },
+      {
+        "id": 10,
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel Garcia Marquez",
+        "publisher": "Harper & Row",
+        "image": "https://m.media-amazon.com/images/I/51dIKTdgk4L._AC_UF1000,1000_QL80_.jpg",
+        "discussion date": "October 2024",
+        "likes": 0
+      },
+      {
+        "id": 11,
+        "title": "Reading Lolita in Tehran: A Memoir in Books",
+        "author": "Azar Nafisi",
+        "publisher": "Random House",
+        "image": "https://m.media-amazon.com/images/I/61fL8e5UymL._SY342_.jpg",
+        "discussion date": "November 2024",
+        "likes": 0
+      },
+      {
+        "id": 12,
+        "title": "The Red Tent",
+        "author": "Anita Diamant",
+        "publisher": "St. Martin's Press",
+        "image": "https://m.media-amazon.com/images/I/51bplfrVj+L._SY445_SX342_.jpg",
+        "discussion date": "December 2024",
+        "likes": 0
+      },
+      {
+        "id": 13,
+        "title": "In the Time of the Butterflies",
+        "author": "Julia Alvarez",
+        "publisher": "Algonquin Books of Chapel Hill",
+        "image": "https://m.media-amazon.com/images/I/4151OPXYASL._SY445_SX342_.jpg",
+        "discussion date": "January 2025",
+        "likes": 0
+      },
+      {
+        "id": 14,
+        "title": "My Invented Country",
+        "author": "Isabel Allende",
+        "publisher": "HarperCollins",
+        "image": "https://www.harpercollins.com/cdn/shop/files/9780063021723_e69d8515-c266-4ba1-ac61-987c9e79443d.jpg?v=1714344136&width=350",
+        "discussion date": "February 2025",
+        "likes": 0
+      },
+      {
+        "id": 15,
+        "title": "Sula",
+        "author": "Toni Morrison",
+        "publisher": "Alfred A. Knopf",
+        "image": "https://m.media-amazon.com/images/I/31Sfg4MnAyL._SY445_SX342_.jpg",
+        "discussion date": "February 2025",
+        "likes": 0
+      }
+    ]
+  }
