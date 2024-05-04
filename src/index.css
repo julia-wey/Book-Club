@@ -1,3 +1,31 @@
+/* :root {
+  --green: rgb(39, 189, 39);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color:rosybrown
+}
+
+/* h2 {
+  margin-bottom: 1rem;
+} */
+
+
+.nav-btn {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .cards {
   list-style: none;
   display: flex;
