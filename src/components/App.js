@@ -13,8 +13,8 @@ function App() {
       {/* <Home GREAT QUOTES ABOUT READING HERE /> */}
       {/* <BooksContainer /> */}
       <Home />
-      <BooksContainer />
-      <BookDetails />
+      {/* <BooksContainer />
+      <BookDetails /> */}
     </div>
   );
 }

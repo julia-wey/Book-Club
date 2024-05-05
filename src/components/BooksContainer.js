@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BookCard from "./BookCard";
+import NavBar from "./NavBar"
 
 function BooksContainer() {
     const [ books, setBooks ] = useState([])
@@ -12,16 +13,23 @@ function BooksContainer() {
 
     const bookCards = books.map((book) => {
         return (
-            <BookCard 
-                key={book.id}
-                title={book.title}
-                image={book.image}
-            />
-        )
-    })
-    return (
-        <ul className="cards">{bookCards}</ul>
-      );
+            <div>
+                
+                
+                <BookCard 
+                    key={book.id}
+                    title={book.title}
+                    image={book.image}
+                />
+        
+           
+            </div>)})
+        return (
+            <div>
+                <NavBar />
+                <ul className="cards">{bookCards}</ul>
+            </div>
+            );
 }
 
 export default BooksContainer;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DetailsCard from './DetailsCard';
+import NavBar from './NavBar'
 
 function BookDetails() {
     const [ booksDetails, setBookDetails ] = useState([])
@@ -8,8 +9,7 @@ function BookDetails() {
         fetch("http://localhost:3001/books")
             .then((resp) => resp.json())
             .then((data) => setBookDetails(data))
-    console.log("this is the book details comp")
-}, [])
+        }, [])
 
 const bookInfo = booksDetails.map((book) => {
     return (
@@ -24,10 +24,12 @@ const bookInfo = booksDetails.map((book) => {
     )
 })
 
-return (
-    <ul className="cards">{bookInfo}</ul>
-  );
+    return (
+        <div>
+            <NavBar />
+            <ul className="cards">{bookInfo}</ul>
+        </div>
+        );
 }
-
 
 export default BookDetails;
