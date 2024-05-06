@@ -14,15 +14,12 @@ function BooksContainer() {
     const bookCards = books.map((book) => {
         return (
             <div>
-                
-                
                 <BookCard 
                     key={book.id}
                     title={book.title}
                     image={book.image}
+                    id={book.id}
                 />
-        
-           
             </div>)})
         return (
             <div>

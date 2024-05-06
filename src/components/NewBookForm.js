@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./NavBar"
 import Form from 'react-bootstrap/Form';
 
 
@@ -7,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 function NewBookForm() {
     return (
         <>
+          <NavBar />
           {/* <Form.Control size="lg" type="text" placeholder="Large text" /> */}
           <br />
           <Form.Control type="text" placeholder="title" />

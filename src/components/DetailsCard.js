@@ -1,8 +1,10 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 
-function DetailsCard({title, author, publisher, image, date}) {
+function DetailsCard({ image, title, author, publisher, date }) {
+   
     return (
+      <>
         <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={image} />
               <Card.Body>
@@ -12,9 +14,10 @@ function DetailsCard({title, author, publisher, image, date}) {
                 <Card.Text>{`for ${date} meeting`}</Card.Text>
               </Card.Body>
             </Card>
+          </>
+
           );
 
 }
-
 
 export default DetailsCard;

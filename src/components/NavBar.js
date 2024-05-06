@@ -1,10 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
-
-    function handleClick() {
-        
-    }
 
     return (
     <header>
@@ -14,14 +11,11 @@ function NavBar() {
           📚 
         </span>
         </h1>
-        {/* <nav>
-            <NavLink to="/books">
-                Our Books
-            </NavLink>
-            <NavLink to="/new">
-                Add New Book
-            </NavLink>
-        </nav> */}
+        <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/books">Our Books</NavLink>
+            <NavLink to="/new">Add New Book</NavLink>
+        </nav>
         <button className="nav-btn">Add New Book</button>
         <button className="nav-btn">Our Books</button>
     </header>
