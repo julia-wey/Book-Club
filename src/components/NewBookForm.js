@@ -1,26 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar"
+import BooksContainer from "./BooksContainer"
 import Form from 'react-bootstrap/Form';
 
+function NewBookForm({setBooks}) {
+  const [title, setTitle] = useState("")
+  const [author, setAuthor] = useState("")
+  const [publisher, setPublisher] = useState("")
+  const [image, setImage] = useState("")
+  const [date, setDate] = useState("")
 
-//this needs a POST
+  function handleSubmit(e) {
+    e.preventDefault()
 
-function NewBookForm() {
-    return (
+    const newBook = {
+      title: title,
+      author: author,
+      publisher: publisher,
+      image: image,
+      discussionDate: date,
+    }
+    
+    fetch("http://localhost:3001/books", {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/JSON"
+      },
+      body: JSON.stringify(newBook)
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setBooks((books) => [...books, data])
+      })
+  }
+      
+  return (
         <>
           <NavBar />
           {/* <Form.Control size="lg" type="text" placeholder="Large text" /> */}
           <br />
-          <Form.Control type="text" placeholder="title" />
+          <form onSubmit={handleSubmit}>
+          <Form.Control 
+            type="text" 
+            name="title" 
+            placeholder="title" 
+            onChange={(e) => setTitle(e.target.value)}
+          />
           <br />
-          <Form.Control type="text" placeholder="author" />
+          <Form.Control 
+            type="text" 
+            name="author" 
+            placeholder="author" 
+            onChange={(e) => setAuthor(e.target.value)}
+          />
           <br />
-          <Form.Control type="text" placeholder="publisher" />
+          <Form.Control 
+            type="text" 
+            name="publisher" 
+            placeholder="publisher" 
+            onChange={(e) => setPublisher(e.target.value)}
+          />
           <br />
-          <Form.Control type="text" placeholder="book cover image" />
+          <Form.Control 
+            type="text" 
+            name="image" 
+            placeholder="book cover image URL" 
+            onChange={(e) => setImage(e.target.value)}
+          />
           <br />
-          <Form.Control type="text" placeholder="Discussion Date" />
+          <Form.Control 
+            type="text" 
+            name="date" 
+            placeholder="Discussion Date" 
+            onChange={(e) => setDate(e.target.value)}
+          />
           <br />
+          <button type="submit">Add Book</button> 
+          </form>
          
         </>
       );

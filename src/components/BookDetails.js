@@ -12,7 +12,7 @@ function BookDetails() {
         fetch(`http://localhost:3001/books/${bookId}`)
             .then((resp) => resp.json())
             .then((data) => setBookDetails([data]))
-        }, [])
+        }, [bookId])
 
     const bookInfo = bookDetails.map((book) => (
         <DetailsCard 
