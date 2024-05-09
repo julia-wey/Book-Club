@@ -70,7 +70,7 @@ function NewBookForm({setBooks}) {
           <Form.Control 
             type="text" 
             name="date" 
-            placeholder="Discussion Date" 
+            placeholder="discussion date" 
             onChange={(e) => setDate(e.target.value)}
           />
           <br />
