@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar"
-import BooksContainer from "./BooksContainer"
+import NavBar from "./NavBar";
 import Form from 'react-bootstrap/Form';
 
 function NewBookForm({setBooks}) {
@@ -37,9 +36,9 @@ function NewBookForm({setBooks}) {
   return (
         <>
           <NavBar />
-          {/* <Form.Control size="lg" type="text" placeholder="Large text" /> */}
           <br />
-          <form onSubmit={handleSubmit}>
+          <h3 className="heading">Add a new book in the form below.</h3>
+          <form className="form" onSubmit={handleSubmit}>
           <Form.Control 
             type="text" 
             name="title" 
@@ -77,7 +76,6 @@ function NewBookForm({setBooks}) {
           <br />
           <button type="submit">Add Book</button> 
           </form>
-         
         </>
       );
     }

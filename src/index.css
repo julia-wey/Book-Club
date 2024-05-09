@@ -1,11 +1,17 @@
-/* :root {
-  --green: rgb(39, 189, 39);
-} */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./books-Image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.quote {
+  text-align: right;
+  margin-right: 10px;
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 body {
@@ -13,17 +19,58 @@ body {
   background-color:rosybrown
 }
 
-/* h2 {
-  margin-bottom: 1rem;
-} */
+.header {
+  display: flex;
+  flex-direction: row;
+}
 
+.app-name {
+  justify-content: right;
+  width: 65vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 10px;
+}
 
 .nav-btn {
-  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.btn {
+  background-color:rgb(214, 168, 168)
+}
+
+.linkBtn {
+  text-decoration: none;
+  background-color:rgb(214, 168, 168);
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 27%;
+  margin-right: 25%;
+  margin-top: 5%;
+}
+
+.form {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: solid;
+  padding: 15px;
 }
 
 .cards {
@@ -39,9 +86,45 @@ body {
 
 .card {
   max-width: 400px;
+  max-height: 600px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* border: 2px solid var(--dark-turquoise); */
+  border: 2px solid var(--dark-turquoise);
   padding: 5px;
   margin: 5px;
+}
+
+.detailsPage {
+  width: 100vw;
+  height: 100vh; 
+  background-image: url('./books-Image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.detailCard {
+  background-color: rgb(214, 168, 168);
+  max-width: 50%;
+  max-height: 600px;
+  position: relative;
+  top: 75px;
+  display: grid;
+  padding: 5px;
+  padding-bottom: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  align-items: center;
+  border: solid;
+}
+
+.detailImg {
+  margin-top: 10px;
+  float: right;
+  height: 400px;
+}
+
+.detailText {
+  margin-top: 10px;
+  margin-left: 10px;
+  text: wrap;
 }

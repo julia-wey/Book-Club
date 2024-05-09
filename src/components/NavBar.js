@@ -4,20 +4,13 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
 
     return (
-    <header>
-      <h1>
-        Book Club
-        <span className="logo" role="img" alt="stack of three books emoji">
-          📚 
-        </span>
-        </h1>
-        <nav>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/books">Our Books</NavLink>
-            <NavLink to="/new">Add New Book</NavLink>
+    <header className="header">
+        <h1 className="app-name">Book Club</h1>
+        <nav className="nav-btn">
+            <NavLink className="nav-btn" to="/"><button className="btn">Home</button></NavLink>
+            <NavLink className="nav-btn" to="/books"><button className="btn">Our Books</button></NavLink>
+            <NavLink className="nav-btn" to="/new"><button className="btn">Add New Book</button></NavLink>
         </nav>
-        <button className="nav-btn">Add New Book</button>
-        <button className="nav-btn">Our Books</button>
     </header>
     );
 }
