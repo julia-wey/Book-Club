@@ -30,8 +30,7 @@ function BookDetails() {
         <header>
             <NavBar />
         </header>
-        <main>
-            <h1>Details</h1>
+        <main className="detailsPage">
             {bookInfo}
         </main>
           </>

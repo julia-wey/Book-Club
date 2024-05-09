@@ -39,7 +39,8 @@ function NewBookForm({setBooks}) {
           <NavBar />
           {/* <Form.Control size="lg" type="text" placeholder="Large text" /> */}
           <br />
-          <form onSubmit={handleSubmit}>
+          <h3 className="heading">Add a new book in the form below.</h3>
+          <form className="form" onSubmit={handleSubmit}>
           <Form.Control 
             type="text" 
             name="title" 

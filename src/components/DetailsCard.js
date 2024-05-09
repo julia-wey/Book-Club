@@ -1,23 +1,21 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
 
 function DetailsCard({ image, title, author, publisher, date }) {
    
     return (
-      <>
-        <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={image} />
-              <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{`by ${author}`}</Card.Text>
-                <Card.Text>{`published by ${publisher}`}</Card.Text>
-                <Card.Text>{`for ${date} meeting`}</Card.Text>
-              </Card.Body>
-            </Card>
-          </>
-
+      <div className="detailCard">
+        <card>
+          <img className="detailImg" src={image}/>
+          <card className="detailText">
+            <h3>{title}</h3>
+            <h4>{`by ${author}`}</h4>
+            <p>{`published by ${publisher}`}</p>
+            <p>{`for ${date} meeting`}</p>
+          </card>
+        </card>
+      </div>
           );
-
 }
 
 export default DetailsCard;
