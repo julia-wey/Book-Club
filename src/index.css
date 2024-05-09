@@ -7,23 +7,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./books-Image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.quote {
+  text-align: right;
+  margin-right: 10px;
+  font-style: italic;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
 
 body {
   font-family: "Playfair Display", serif;
   background-color:rosybrown
 }
 
-/* h2 {
-  margin-bottom: 1rem;
-} */
+.header {
+  display: flex;
+  flex-direction: row;
+  
+}
 
+.app-name {
+  justify-content: right;
+  /* background-color:blueviolet; */
+  width: 65vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  
+}
 
 .nav-btn {
-  float: right;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.btn {
+  background-color:rgb(214, 168, 168)
 }
 
 .cards {
@@ -39,9 +73,10 @@ body {
 
 .card {
   max-width: 400px;
+  max-height: 600px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* border: 2px solid var(--dark-turquoise); */
+  border: 2px solid var(--dark-turquoise);
   padding: 5px;
   margin: 5px;
 }
